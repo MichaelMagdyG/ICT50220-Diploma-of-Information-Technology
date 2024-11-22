@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<clothing>
+    <title>Carole's Handmade Clothes</title>
+    <image>
+        <src>fabric_animation.gif</src>
+        <audio>
+            <src>sewing_sound.mp3</src>
+            <autoplay>true</autoplay>
+        </audio>
+    </image>
+    <item>
+        <name>Shift dress</name>
+        <price>$45.00</price>
+        <description>Simple shift, available in two colours. 100% cotton.</description>
+    </item>
+    <item>
+        <name>Wraparound skirt</name>
+        <price>$30.00</price>
+        <description>Simple wraparound skirt, available in two colours. 100% cotton.</description>
+    </item>
+    <item>
+        <name>Cardigan</name>
+        <price>$70.00</price>
+        <description>Winter cardigan, available in two colours. 100% wool.</description>
+    </item>
+    <item>
+        <name>Dress hat</name>
+        <price>$20.00</price>
+        <description>Stylish dress hat, available in two colours. 100% linen.</description>
+    </item>
+</clothing>

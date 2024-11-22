@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu [
+    <!ENTITY currency "$">
+    <!ELEMENT menu (title, image, item+)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT image (src, audio)>
+    <!ATTLIST image type CDATA #REQUIRED>
+    <!ELEMENT src (#PCDATA)>
+    <!ELEMENT audio (src, autoplay)>
+    <!ATTLIST audio type CDATA #REQUIRED>
+    <!ELEMENT autoplay (#PCDATA)>
+    <!ELEMENT item (name, price, description)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+]>
+<menu>
+    <title>Bryan's Café Lunch Menu</title>
+    <image type="gif">
+        <src>food_gif.gif</src>
+        <audio type="mp3">
+            <src>background_sound.mp3</src>
+            <autoplay>true</autoplay>
+        </audio>
+    </image>
+    <item>
+        <name>Beetroot and feta salad</name>
+        <price>&currency;15.00</price>
+        <description>Suitable for vegetarians, made with fresh beetroot.</description>
+    </item>
+    <item>
+        <name>Sourdough Rye Sandwich</name>
+        <price>&currency;18.00</price>
+        <description>Cheese and salad sandwich made with organic, sourdough rye bread.</description>
+    </item>
+    <item>
+        <name>Spinach Pie and Salad</name>
+        <price>&currency;20.00</price>
+        <description>Tasty pie with salad.</description>
+    </item>
+    <item>
+        <name>Feta pancakes with salad</name>
+        <price>&currency;19.50</price>
+        <description>Tasty pancake filled with feta and salad.</description>
+    </item>
+</menu>

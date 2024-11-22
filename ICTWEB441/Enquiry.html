@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasCollege - Enquiry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://tascollege.edu.au/wp-content/uploads/TasCollege-logo.png" 
+             alt="TasCollege Logo" class="logo">
+        <nav aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="About.html" class="active">About Us</a></li>
+                <li><a href="CourseDetails.html" class="active">Course Details</a></li>
+                <li><a href="Enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="Contactus.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+   <main>
+    <h1 class="title">Enquiry Form</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const form = document.getElementById('enquiryForm');
+          
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // منع إعادة تحميل الصفحة
+      
+            // إضافة رسالة التأكيد إلى الصفحة
+            const messageDiv = document.createElement('div');
+            messageDiv.setAttribute('id', 'confirmationMessage');
+            messageDiv.textContent = 'Thank you for your enquiry!';
+            document.body.appendChild(messageDiv);
+          });
+        });
+      </script>
+      <form id="enquiryForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Full name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+      
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Message" required rows="2"></textarea><br>
+      
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+      
+</main>
+
+    <footer>
+        <p>&copy; 2024 Michael Mikhail. All rights reserved.</p>
+    </footer>
+</body>
+</html>

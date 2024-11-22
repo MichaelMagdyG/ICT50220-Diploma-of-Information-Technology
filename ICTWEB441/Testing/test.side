@@ -1,0 +1,284 @@
+{
+  "id": "ee39d843-eab9-44f2-9626-7b02c46f0c0d",
+  "version": "2.0",
+  "name": "test",
+  "url": "C:/Users/GuestUserTasCollege/Desktop/Michael/ICTWEB441/About.html",
+  "tests": [{
+    "id": "3e0f4f5d-0005-41a0-ba6c-31621b2052c7",
+    "name": "test2222",
+    "commands": [{
+      "id": "832f6385-f0dd-41eb-9d57-12060da069c3",
+      "comment": "",
+      "command": "open",
+      "target": "C:/Users/GuestUserTasCollege/Desktop/Michael/ICTWEB441/About.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d92330a2-7257-4e4f-9632-3f3cea221dd2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05371549-be83-41f6-b443-bd6f7e44643d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=li:nth-child(1) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Home.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14516143-8418-4036-b226-3769b15ba5d0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=li:nth-child(2) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'About.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6879aa88-69d7-4b93-9772-0bacb179decc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Course Details",
+      "targets": [
+        ["linkText=Course Details", "linkText"],
+        ["css=li:nth-child(3) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Course Details')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'CourseDetails.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Course Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4859ab-4186-4e68-bf13-440c2b6c9401",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enquiry",
+      "targets": [
+        ["linkText=Enquiry", "linkText"],
+        ["css=li:nth-child(4) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Enquiry')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Enquiry.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enquiry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf8b4145-40de-444e-b045-836c42097cef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact Us",
+      "targets": [
+        ["linkText=Contact Us", "linkText"],
+        ["css=li:nth-child(5) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact Us')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Contactus.html')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d03bb319-f005-4ccd-8f3e-98c348cfdf64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enquiry",
+      "targets": [
+        ["linkText=Enquiry", "linkText"],
+        ["css=li:nth-child(4) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Enquiry')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Enquiry.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enquiry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e284e331-4950-4ef1-a4db-9118611ee5a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "872278bf-f129-418c-a950-940008541077",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce7d01f1-9749-4037-bf81-2fa53f485e7d",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b0e8c67-4378-412f-adf8-e7331bb6f1f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67ddb696-f560-4d1e-a67b-c9747c5143b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Michael"
+    }, {
+      "id": "1a40da47-f52b-474c-8e19-96d0c9d17270",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "wall-84@hotmail.com"
+    }, {
+      "id": "2b83d44b-030d-4a2f-ac76-62573f394cbb",
+      "comment": "",
+      "command": "type",
+      "target": "id=subject",
+      "targets": [
+        ["id=subject", "id"],
+        ["name=subject", "name"],
+        ["css=#subject", "css:finder"],
+        ["xpath=//input[@id='subject']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "88e341e2-6dc7-42bd-8b53-b84cadc1facd",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=message", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "f7e35b5b-7262-4fdc-b40e-b2e6dc3cee9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Send Message')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c1295a2-3c5c-456a-a219-7aea5e7499f2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Send Message')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c423cdbd-2261-40e8-96dd-8ced76d149d1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='enquiryForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Send Message')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78153449-68ef-4dc8-aa4b-567f38a52a98",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=li:nth-child(1) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Home.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d15ad803-1939-44f8-9ce4-80c6550c6a77",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3e0f4f5d-0005-41a0-ba6c-31621b2052c7"]
+  }],
+  "urls": ["c:/Users/GuestUserTasCollege/Desktop/Michael/ICTWEB441/About.html"],
+  "plugins": []
+}

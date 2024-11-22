@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.example.com/library" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/library http://www.example.com/library.xsd">
+    <metadata>
+        <libraryName>Classic Literature Library</libraryName>
+        <location>New York City, USA</location>
+        <establishedYear>2000</establishedYear>
+        <totalBooks>6</totalBooks>
+        <lastUpdated>2024-11-08</lastUpdated>
+    </metadata>
+    
+    <owners>
+        <owner id="001" name="Michael" email="michael@example.com" joinDate="2010-05-15">
+            <biography>
+                <birthDate>1980-03-25</birthDate>
+                <nationality>American</nationality>
+                <interests>
+                    <interest>Literature</interest>
+                    <interest>Philosophy</interest>
+                    <interest>History</interest>
+                </interests>
+            </biography>
+            <books>
+                <book category="Fiction" genre="Psychological" availability="InStock">
+                    <title>The Catcher in the Rye</title>
+                    <author>J.D. Salinger</author>
+                    <year>1951</year>
+                    <isbn>978-0-316-76948-0</isbn>
+                    <description>
+                        A novel about the struggles of a troubled teenage boy, Holden Caulfield, who questions the world around him.
+                    </description>
+                    <keywords>
+                        <keyword>adolescence</keyword>
+                        <keyword>alienation</keyword>
+                        <keyword>identity</keyword>
+                    </keywords>
+                </book>
+                <book category="Fiction" genre="Southern Gothic" availability="CheckedOut">
+                    <title>To Kill a Mockingbird</title>
+                    <author>Harper Lee</author>
+                    <year>1960</year>
+                    <isbn>978-0-06-112008-4</isbn>
+                    <description>
+                        A deeply moving novel set in the racially segregated South, exploring themes of justice, morality, and childhood innocence.
+                    </description>
+                    <keywords>
+                        <keyword>racism</keyword>
+                        <keyword>justice</keyword>
+                        <keyword>childhood</keyword>
+                    </keywords>
+                </book>
+                <book category="Dystopian" genre="Political" availability="InStock">
+                    <title>1984</title>
+                    <author>George Orwell</author>
+                    <year>1949</year>
+                    <isbn>978-0-452-28423-4</isbn>
+                    <description>
+                        A chilling depiction of a totalitarian regime that controls every aspect of life, from history to individual thought.
+                    </description>
+                    <keywords>
+                        <keyword>totalitarianism</keyword>
+                        <keyword>surveillance</keyword>
+                        <keyword>freedom</keyword>
+                    </keywords>
+                </book>
+            </books>
+        </owner>
+        
+        <owner id="002" name="Esther" email="esther@example.com" joinDate="2015-11-20">
+            <biography>
+                <birthDate>1992-07-11</birthDate>
+                <nationality>Canadian</nationality>
+                <interests>
+                    <interest>Philosophy</interest>
+                    <interest>Science Fiction</interest>
+                    <interest>Political Theory</interest>
+                </interests>
+            </biography>
+            <books>
+                <book category="Classic" genre="Tragedy" availability="InStock">
+                    <title>The Great Gatsby</title>
+                    <author>F. Scott Fitzgerald</author>
+                    <year>1925</year>
+                    <isbn>978-0-7432-7356-5</isbn>
+                    <description>
+                        A story of love, wealth, and ambition set against the backdrop of the Jazz Age in America, exploring the American Dream.
+                    </description>
+                    <keywords>
+                        <keyword>American Dream</keyword>
+                        <keyword>love</keyword>
+                        <keyword>society</keyword>
+                    </keywords>
+                </book>
+                <book category="Dystopian" genre="Science Fiction" availability="InStock">
+                    <title>Brave New World</title>
+                    <author>Aldous Huxley</author>
+                    <year>1932</year>
+                    <isbn>978-0-06-085052-3</isbn>
+                    <description>
+                        A novel set in a futuristic world where happiness is artificially created, and individuality is sacrificed for social stability.
+                    </description>
+                    <keywords>
+                        <keyword>utopia</keyword>
+                        <keyword>control</keyword>
+                        <keyword>society</keyword>
+                    </keywords>
+                </book>
+                <book category="Dystopian" genre="Sci-Fi" availability="CheckedOut">
+                    <title>Fahrenheit 451</title>
+                    <author>Ray Bradbury</author>
+                    <year>1953</year>
+                    <isbn>978-1-4516-7331-9</isbn>
+                    <description>
+                        A cautionary tale set in a future where books are banned, and critical thought is suppressed by the government.
+                    </description>
+                    <keywords>
+                        <keyword>censorship</keyword>
+                        <keyword>rebellion</keyword>
+                        <keyword>freedom of speech</keyword>
+                    </keywords>
+                </book>
+            </books>
+        </owner>
+    </owners>
+</library>

@@ -1,0 +1,49 @@
+Bryan’s Café Menu XML Document
+<menu>
+    ├── <title>
+    ├── <image>
+    │   ├── <src> (food_gif.gif)
+    │   └── <audio>
+    │       ├── <src> (background_sound.mp3)
+    │       └── <autoplay> (true)
+    └── <item>
+        ├── <name> Beetroot and feta salad
+        ├── <price> $15.00
+        └── <description> Suitable for vegetarians, made with fresh beetroot.
+    └── <item>
+        ├── <name> Sourdough Rye Sandwich
+        ├── <price> $18.00
+        └── <description> Cheese and salad sandwich made with organic, sourdough rye bread.
+    └── <item>
+        ├── <name> Spinach Pie and Salad
+        ├── <price> $20.00
+        └── <description> Tasty pie with salad.
+    └── <item>
+        ├── <name> Feta pancakes with salad
+        ├── <price> $19.50
+        └── <description> Tasty pancake filled with feta and salad.
+
+Carole’s Clothes Advertisement XML Document
+<clothing>
+    ├── <title>
+    ├── <image>
+    │   ├── <src> (fabric_animation.gif)
+    │   └── <audio>
+    │       ├── <src> (sewing_sound.mp3)
+    │       └── <autoplay> (true)
+    └── <item>
+        ├── <name> Shift dress
+        ├── <price> $45.00
+        └── <description> Simple shift, available in two colours. 100% cotton.
+    └── <item>
+        ├── <name> Wraparound skirt
+        ├── <price> $30.00
+        └── <description> Simple wraparound skirt, available in two colours. 100% cotton.
+    └── <item>
+        ├── <name> Cardigan
+        ├── <price> $70.00
+        └── <description> Winter cardigan, available in two colours. 100% wool.
+    └── <item>
+        ├── <name> Dress hat
+        ├── <price> $20.00
+        └── <description> Stylish dress hat, available in two colours. 100% linen.

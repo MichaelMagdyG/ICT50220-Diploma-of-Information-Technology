@@ -1,0 +1,85 @@
+/* Styling for the Menu Document */
+menu {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+name {
+    font-size: 1.5em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+price {
+    font-size: 1.2em;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+description {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Styling for the Clothing Document */
+clothing {
+    font-family: 'Verdana', sans-serif;
+    margin: 30px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+
+clothing title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 25px;
+}
+
+item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 0.1px;
+    border-radius: 8px;
+}
+
+name {
+    font-size: 1em;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+price {
+    font-size: 1em;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+description {
+    font-size: 1em;
+    color: #95a5a6;
+    margin-top: 8px;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clothing [
+    <!ENTITY currency "$">
+    <!ELEMENT clothing (title, image, item+)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT image (src, audio)>
+    <!ATTLIST image type CDATA #REQUIRED>
+    <!ELEMENT src (#PCDATA)>
+    <!ELEMENT audio (src, autoplay)>
+    <!ATTLIST audio type CDATA #REQUIRED>
+    <!ELEMENT autoplay (#PCDATA)>
+    <!ELEMENT item (name, price, description)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+]>
+<clothing>
+    <title>Carole's Handmade Clothes</title>
+    <image type="gif">
+        <src>fabric_animation.gif</src>
+        <audio type="mp3">
+            <src>sewing_sound.mp3</src>
+            <autoplay>true</autoplay>
+        </audio>
+    </image>
+    <item>
+        <name>Shift dress</name>
+        <price>&currency;45.00</price>
+        <description>Simple shift, available in two colours. 100% cotton.</description>
+    </item>
+    <item>
+        <name>Wraparound skirt</name>
+        <price>&currency;30.00</price>
+        <description>Simple wraparound skirt, available in two colours. 100% cotton.</description>
+    </item>
+    <item>
+        <name>Cardigan</name>
+        <price>&currency;70.00</price>
+        <description>Winter cardigan, available in two colours. 100% wool.</description>
+    </item>
+    <item>
+        <name>Dress hat</name>
+        <price>&currency;20.00</price>
+        <description>Stylish dress hat, available in two colours. 100% linen.</description>
+    </item>
+</clothing>

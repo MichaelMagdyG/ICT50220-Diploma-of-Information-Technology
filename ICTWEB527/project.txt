@@ -1,0 +1,108 @@
+config.php
+
+<?php
+$host = 'localhost';
+$dbname = 'flowerpower';
+$username = 'root';
+$password = '';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
+?>
+
+
+index.php
+
+<h2>Welcome to Flower Power</h2>
+<p><a href="register.php">Register</a> | <a href="login.php">Login</a></p>
+
+
+login.php
+
+<?php
+session_start();
+require 'config.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+    $stmt->execute(['username' => $username]);
+    $user = $stmt->fetch();
+
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['user'] = $user;
+        header("Location: members.php");
+    } else {
+        echo "Invalid username or password.";
+    }
+}
+?>
+
+<form method="post">
+    <h2>Login</h2>
+    Username: <input type="text" name="username" required><br>
+    Password: <input type="password" name="password" required><br>
+    <button type="submit">Login</button>
+</form>
+
+
+logout.php
+
+<?php
+session_start();
+session_destroy();
+header("Location: login.php");
+?>
+
+
+members.php
+
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php");
+    exit;
+}
+
+$user = $_SESSION['user'];
+?>
+
+<h2>Welcome, <?php echo htmlspecialchars($user['username']); ?>!</h2>
+<p>Your email: <?php echo htmlspecialchars($user['email']); ?></p>
+<p>Member benefits: Exclusive discounts, early access to products, and more!</p>
+<a href="logout.php">Logout</a>
+
+
+register.php
+
+<?php
+require 'config.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+    try {
+        $stmt = $pdo->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
+        $stmt->execute(['username' => $username, 'email' => $email, 'password' => $password]);
+        echo "Registration successful! <a href='login.php'>Login here</a>";
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+}
+?>
+
+<form method="post">
+    <h2>Register</h2>
+    Username: <input type="text" name="username" required><br>
+    Email: <input type="email" name="email" required><br>
+    Password: <input type="password" name="password" required><br>
+    <button type="submit">Register</button>
+</form>

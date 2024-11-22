@@ -1,0 +1,142 @@
+/* General Body Styling */
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Align children vertically */
+    min-height: 100vh; /* Ensure body fills viewport height */
+    font-family: 'Arial', sans-serif; /* Set font */
+    background-color: #f0f2f5; /* Background color */
+    line-height: 1.6; /* Line height for text */
+}
+
+/* Header Styling */
+header {
+    display: flex; /* Flexbox for header */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    background-color: #ffffff; /* Header background color */
+    padding: 20px 30px; /* Increased padding for better touch targets */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+    height: 60px; /* Logo size */
+}
+
+.nav-list {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Flexbox for navigation */
+    gap: 20px; /* Space between links */
+    margin: 0; /* Remove margin */
+}
+
+.nav-list a {
+    color: #1E73BE; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-weight: 500; /* Font weight */
+}
+
+.nav-list a.active {
+    background-color: #1E73BE; /* Active link color */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* Ensure text is white for visibility */
+}
+
+.nav-list a:hover {
+    background-color: #26d2e3; /* Hover background color */
+    color: black; /* Hover text color */
+}
+
+/* Main Content Styling */
+main {
+    flex: 1; /* Allow main content to grow */
+    margin: 30px; /* Margin around main */
+    padding: 25px; /* Padding inside main */
+    background-color: #ffffff; /* Main background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1200px; /* Max width for main */
+}
+
+/* Button Styling */
+button, .submit-button {
+    background-color: #1E73BE; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 24px; /* Padding inside button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+button:hover, .submit-button:hover {
+    background-color: #26d2e3; /* Hover background color */
+    color: black; /* Hover text color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    font-size: 16px; /* Font size */
+    padding: 10px; /* Padding */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #1E73BE; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Title Styling */
+.title {
+    color: #4268C1; /* Title text color */
+    font-size: 24px; /* Larger font size for titles */
+    margin-bottom: 20px; /* Space below title */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Space between nav items */
+    }
+
+    main {
+        margin: 15px; /* Margin adjustments for smaller screens */
+        padding: 20px; /* Padding adjustments for smaller screens */
+    }
+}
+
+/* Icon Styling */
+.icon {
+    vertical-align: middle; /* Align icons vertically */
+    margin-right: 10px; /* Space to the right of icons */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2B347D; /* Footer background color */
+    color: #fff; /* Footer text color */
+    text-align: center; /* Center footer text */
+    padding: 20px; /* Increased padding for better touch targets */
+    margin-top: auto; /* Push footer to bottom */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow on top */
+}

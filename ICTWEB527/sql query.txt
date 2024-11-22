@@ -1,0 +1,23 @@
+-- Create the 'flowerpower' database
+CREATE DATABASE flowerpower;
+
+-- Use the 'flowerpower' database
+USE flowerpower;
+
+-- Create the 'users' table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+USE flowerpower;
+-- Inserting sample users into the 'users' table
+INSERT INTO users (username, email, password)
+VALUES
+    ('john_doe', 'john.doe@example.com', '$2y$10$EIXnxQpVEkhflZoeScFvuAtJ.HhlTBVZkcWiE4zD2rc8JHlM9cNeG'),
+    ('jane_smith', 'jane.smith@example.com', '$2y$10$gfhfwqU2lTYVZg7ff3JGHcOdxcpVt1Xe6Qb6mYk/d95z.DgShNwUm'),
+    ('alice_jones', 'alice.jones@example.com', '$2y$10$8s6HHhhHQxk21F0jjcF7k.6fnCwLzq8imZb1FgRd3SjmCw5aUVEhG').
+    ('Michael', 'michael@example.com', '$2y$10$VTTdw./dewJQ3VOnBIe6FOYpC8J32SX7E6fP/uy5TyTWFM3/X3mZS');
