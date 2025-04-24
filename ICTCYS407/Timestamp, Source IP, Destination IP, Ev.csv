@@ -1,0 +1,4 @@
+Timestamp, Source IP, Destination IP, Event Type, Action Taken
+24/04/2025 12:00, 192.168.1.100, 192.168.1.1, DoS Attack, Blocked
+24/04/2025 12:05, 192.168.1.101, 192.168.1.1, Brute Force Attempt, Blocked
+24/04/2025 12:10, 198.51.100.12, 192.168.1.1, Suspicious Traffic, Blocked
